@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Agustin Schniepp">
+    <meta name="description" content="Bienvenidos a mi pagina web, donde les enseñare todos mis progesos y avances en la programacion y mis proyectos que ire haciendo a lo largo de esta nueva etapa">
+    <meta name="robots" content="index">
     <!--Style CSS & Normalize-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="normalize.css">
@@ -20,8 +25,9 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
     <!--Scrollreveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <title>Document</title>
+    <!--Tittle & Icon-->
+    <title>Agustin Schniepp</title>
+    <link rel="icon" href="img/icono.ico">
 </head>
 <body>
     <!--Intro-->
@@ -57,6 +63,22 @@
                 </ul>
             </nav>
         </div>
+        <!--Menu Mobile-->
+        <div class="main-nav-mobile">
+          <a href="#offcanvas-slide" class="uk-button uk-button-default" style="border: none;" uk-toggle><i class="fas fa-bars"></i></a>
+          <a href="#" class="logo"><span class="logo__edit">{</span>As<span class="logo__edit">}</span></a>
+        </div>
+            <div id="offcanvas-slide" uk-offcanvas>
+             <div class="uk-offcanvas-bar">
+              <ul class="uk-nav uk-nav-default">
+                  <li class="nav__link"><a href="#main">Home</a></li>
+                  <li class="nav__link"><a href="#about">About</a></li>
+                  <li class="nav__link"><a href="#skills">Skills</a></li>
+                  <li class="nav__link"><a href="#portfolio">Portfolio</a></li>
+                  <li class="nav__link"><a href="#contact-form">Contact</a></li>
+                </ul>
+            </div>
+        </div>
         <!--introduction-->
         <div class="introduction">
             <div class="introduction__greetings">Hello, my name is</div>
@@ -70,27 +92,22 @@
             <a class="social__link" target="_BLANK" href="https://www.youtube.com/channel/UCL8TkSq-vvcwo8VXVZulURA"><i class="social__icon fab fa-youtube"></i></a>
             <a class="social__link" target="_BLANK" href="https://www.instagram.com/aguss.sc/?hl=es"><i class="social__icon fab fa-instagram"></i></a>	
         </div>
-        <div class="main__background uk-animation-scale-up">
-            <div class="text background-text1">Hello,welcome to</div>
-            <div class="text background-text2">My portfolio</div>
-            <div class="text background-text3">I'm Agustin Schniepp</div>
-            <div class="text background-text4">and i'm a <span class="introduction__me-animation2"></span></div>
-        </div>
-        <img class="img__background" src="img/background.png" alt="">
+        <!--Background-->
+        <img class="img__background" src="img/background.png" alt="background" title="background">
     </div>
     <!--About me-->
     <div id="about" class="about">
         <div class="about__tittle">
-            <div>About me</div>
+            <div class="about__tittle-active">About me</div>
         </div>
         <div class="about__img">
             <div class="about__img-container">
-                <img class="about__img-me" src="img/Agustin-Schniepp.png" alt="" title="">
+                <img class="about__img-me" src="img/Agustin-Schniepp.png" alt="Agustin Schniepp" title="Developer">
             </div>
         </div>
         <div class="about__me">
             <div class="about__me-tittle">I'm Agustin and i'm a <span class="about__me-animation"></span></div>
-            <p class="about__me-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit doloribus magni illum nobis iusto illo, labore asperiores aliquam, autem perspiciatis distinctio id temporibus? Atque suscipit cupiditate laborum sapiente iste voluptatibus.</p>
+            <p class="about__me-paragraph">Welcome to my website, my name is Agustín and I am 18 years old. I am currently studying at the National Institute of Civil Aeronautics, so at the end of the year I will become an avionics technician. I was introduced to programming when I was very young but it never interested me. Recently, thanks to the media, I received announcements about what programming is. Then, little by little, when I got informed, I became interested in this world and now I find myself studying the basic programming languages ​​to be able to start learning, improve myself and put the theory into practice, and tomorrow get a job or do a project. to be successful such as creating a service, a web page or an application/game.</p>
         </div>
         <!--Button CV-->
         <a href="#" class="btn-cv">Download CV</a>
@@ -202,10 +219,10 @@
     <!--Contact Me-->
     <div class="contact" id="contact-form">
       <h2 class="contact-tittle about__tittle">Contact Me</h2>
-      <form class="email-box">      
-        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+      <form action="https://formsubmit.co/99f85744fe05100d46688d1fbf663985" class="email-box" method="POST">      
+        <input name="name" type="text" class="feedback-input" placeholder="Name" required />   
+        <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
+        <textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
         <input type="submit" value="SUBMIT"/>
       </form>
     </div>

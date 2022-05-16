@@ -18,14 +18,7 @@ $(document).ready(function(){
         typeSpeed: 90,
         backSpeed: 60,
         loop: true
-    });
-    var typed = new Typed(".introduction__me-animation2", {
-        strings : ["Developer"], 
-        typeSpeed: 90,
-        backSpeed: 60,
-        loop: true
-    });
-    
+    });   
     var typed = new Typed(".about__me-animation", {
         strings : ["Developer"], 
         typeSpeed: 100,
