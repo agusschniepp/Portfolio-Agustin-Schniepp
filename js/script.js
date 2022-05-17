@@ -46,7 +46,7 @@ sr.reveal('.img__background', {
     origin: 'bottom',
      distance: '-100px'
 }); 
-sr.reveal('.about__tittle', {
+sr.reveal('.about__tittle-active', {
     duration: 1500,
     origin: 'top',
     distance: '-100px'
@@ -101,7 +101,7 @@ sr.reveal('.info', {
     origin: 'rigth',
     distance: '-100px'
 });
-sr.reveal('.email__container', {
+sr.reveal('.email-box', {
     duration: 3000,
     origin: 'top',
     distance: '-100px'
